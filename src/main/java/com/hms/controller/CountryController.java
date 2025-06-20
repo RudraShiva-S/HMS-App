@@ -10,7 +10,7 @@ public class CountryController {
 
     //http://localhost:8080/api/v1/country
 
-    @PostMapping
+    @PostMapping("/addcountry")
     public  String addCountry () {
         return "added";
     }

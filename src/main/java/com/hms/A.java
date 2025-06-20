@@ -9,8 +9,10 @@ public class A {
 //         PasswordEncoder encode = new BCryptPasswordEncoder();
 //        System.out.println(encode.encode("testing" ));
 
+        System.out.println(BCrypt.hashpw("testing", BCrypt.gensalt(5)));
 
-        String enPwd = BCrypt.hashpw("testing", BCrypt.gensalt(5));
-        System.out.println(enPwd);
+
+//        String enPwd = BCrypt.hashpw("testing", BCrypt.gensalt(5));
+//        System.out.println(enPwd);
     }
 }
